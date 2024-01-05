@@ -1,0 +1,60 @@
+:root {
+  --CorPrincipalRosaSelect: #ff8795;
+  --CorPrincipalRosa: #f36d00;
+  --CorBranca: #FCF5ED;
+  --CorEscuraSelect: #4b3838;
+  --CorEscura: #1F1717;
+  --CorDePele: #555766;
+  --botaoDuplicar: rgb(0, 177, 168);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body{
+  background-color: var(--CorDePele);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+i {
+  color: var(--CorBranca);
+  font-size: 40px;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  z-index: 10;
+  background-color: var(--CorEscura);
+
+}
+.MenuInicialbtn{
+  background-color: transparent;
+}
+
+
+a {
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 280px;
+  height: 50px;
+  border: none;
+  background-color: var(--CorPrincipalRosa);
+  border-radius: 10px;
+  font-size: 20px;
+  color: var(--CorBranca);
+  cursor: pointer;
+  transition: all .3s;
+
+}

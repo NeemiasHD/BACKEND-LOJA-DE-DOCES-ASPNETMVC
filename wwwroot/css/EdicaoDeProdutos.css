@@ -1,0 +1,471 @@
+main {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.BarraDePesquisa {
+
+    width: 350px;
+    height: 40px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 50px;
+
+}
+
+.BarraDePesquisa:focus {
+    outline: none;
+}
+
+.InputPesquisaGroup {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 40px;
+    background-color: var(--CorBranca);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+
+}
+
+.InputPesquisaGroup i {
+    color: rgb(168, 168, 168);
+    font-size: 35px;
+
+}
+
+.ListaDeProdutos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 1000px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/*Estilização dos produtos*/
+.produto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    padding: 25px;
+    height: 340px;
+    width: 250px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.247);
+    align-items: center;
+    justify-content: center;
+}
+
+.TodasInformacoesDoProduto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 25px;
+    height: 340px;
+    width: 250px;
+    align-items: center;
+
+}
+
+.img {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 180px;
+    border-radius: 10px;
+    height: 200px;
+    position: relative;
+    
+}
+.img i{
+    color: rgb(255, 255, 255);
+    width: 250px;
+    height: 200px;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px) ;
+    position: absolute;
+    transition: all .5s;
+ 
+}
+
+img {
+    width: 180px;
+
+}
+
+.Informacoes {
+
+    color: var(--CorEscura);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
+
+.tituloProduto {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 900;
+    align-self: baseline;
+    border: none;
+
+    pointer-events: none;
+    width: 200px;
+
+
+}
+
+.precoProduto {
+    font-size: 25px;
+    font-weight: 900;
+    align-self: baseline;
+    width: 200px;
+    border: none;
+    pointer-events: none;
+
+
+
+}
+
+.descricaoProduto {
+    height: 30px;
+    font-size: 11px;
+    align-self: baseline;
+    overflow-y: hidden;
+    overflow-wrap: break-word;
+    border: none;
+    pointer-events: none;
+    width: 200px;
+
+}
+
+.tituloProduto:focus,
+.precoProduto:focus,
+.descricaoProduto:focus {
+    outline: none;
+}
+
+.BtnProduto {
+    position: relative;
+    top: 10px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.BtnProduto a {
+    padding: 0;
+    margin: 0;
+
+
+    width: 50px;
+    height: 30px;
+}
+
+.BtnProduto i{
+    font-size: 25px;
+}
+
+.LixoBtn {
+    background-color: red;
+}
+
+.LixoBtn:active {
+    background-color: rgb(139, 39, 39);
+}
+
+.EditarBtn {
+    background-color: gray;
+}
+
+.EditarBtn:active {
+    background-color: rgb(56, 56, 56);
+}
+
+.SalvarBtn {
+    background-color: rgb(0, 190, 0);
+}
+
+.SalvarBtn:active {
+    background-color: rgb(0, 112, 0);
+}
+
+
+
+
+.ConfirmacaoDeExclusaoDeProduto{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+
+}
+.ConfirmacaoDeExclusaoDeProduto h1{
+    font-size: 17px;
+}
+.ConfirmacaoDeExclusaoDeProduto a {
+    width: 50px;
+}
+.SimOuNaoBtn{
+    display: flex;
+    gap: 10px;
+}
+.ExcluirSimBTN{
+    background-color: rgb(0, 190, 0);
+}
+.ExcluirNaoBTN{
+    background-color: red;
+}
+
+
+
+
+.ImagemInput{
+    position: absolute;
+    pointer-events:none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ImagemInput {
+    position: absolute;
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CategoriaDoProdutoInput {
+    width: 100%;
+    border: 1px solid rgb(105, 105, 105);
+    display: flex;
+    font-size: 20px;
+    color: rgb(105, 105, 105);
+    pointer-events: none;
+    font-weight: 800;
+}
+
+.CategoriaDoProdutoInput:focus {
+    outline: none;
+}
+
+
+
+
+.ordenador {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 5px;
+    position: relative;
+}
+
+.ordenador a {
+    background-color: transparent;
+    width: 150px;
+    height: 25px;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: var(--CorPrincipalRosa);
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+
+}
+
+.ordenador a:hover {
+    background-color: var(--CorPrincipalRosaSelect);
+}
+
+.ordenador li:hover .subCategorias {
+    opacity: 1;
+    pointer-events: all;
+    flex-direction: column;
+    z-index: 1000;
+
+
+
+}
+
+
+
+li {
+    list-style: none;
+}
+
+.subCategorias {
+    position: absolute;
+    background-color: var(--CorEscura);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s;
+
+}
+
+.subCategorias a {
+
+
+    background-color: var(--CorEscura);
+    border-radius: 0;
+}
+
+.subCategorias a:hover {
+
+    background-color: var(--CorEscura);
+    color: var(--CorPrincipalRosa);
+}
+
+
+#botaoAZ {
+    transition: all .5s;
+}
+
+.ordenador .listCategoriaC,
+.ordenador .listCategoriaP {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ordenador .listCategoriaC:hover,
+.ordenador .listCategoriaP:hover {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+
+}
+
+.ordenador li:hover #listCategoriaC,
+.ordenador li:hover #listCategoriaP {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+
+.ordenador .listCategoriaC i {
+    font-size: 20px;
+
+}
+
+
+
+/*Loader*/
+
+.loader2{
+    position: relative;
+        margin-top: 60px;
+        color: var(--CorEscura);
+        font-size: 15px;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        position: relative;
+        text-indent: -9999em;
+        animation: mulShdSpin .9s infinite linear;
+        transform: translateZ(0);
+}
+
+.loader {
+    position: relative;
+    margin-top: 200px;
+    color: var(--CorBranca);
+    font-size: 15px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    animation: mulShdSpin .9s infinite linear;
+    transform: translateZ(0);
+}
+
+@keyframes mulShdSpin {
+
+    0%,
+    100% {
+        box-shadow: 0 -3em 0 0.2em,
+            2em -2em 0 0em, 3em 0 0 -1em,
+            2em 2em 0 -1em, 0 3em 0 -1em,
+            -2em 2em 0 -1em, -3em 0 0 -1em,
+            -2em -2em 0 0;
+    }
+
+    12.5% {
+        box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em,
+            3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em,
+            -2em 2em 0 -1em, -3em 0 0 -1em,
+            -2em -2em 0 -1em;
+    }
+
+    25% {
+        box-shadow: 0 -3em 0 -0.5em,
+            2em -2em 0 0, 3em 0 0 0.2em,
+            2em 2em 0 0, 0 3em 0 -1em,
+            -2em 2em 0 -1em, -3em 0 0 -1em,
+            -2em -2em 0 -1em;
+    }
+
+    37.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+            3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em,
+            -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+
+    50% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+            3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em,
+            -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+
+    62.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+            3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0,
+            -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+
+    75% {
+        box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em,
+            3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+            -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+
+    87.5% {
+        box-shadow: 0em -3em 0 0, 2em -2em 0 -1em,
+            3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+            -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+}

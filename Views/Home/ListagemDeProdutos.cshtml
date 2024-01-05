@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Produtos";
+}
+<script src="~/js/ListagemDeProdutos.js" asp-append-version="true"></script>
+<link rel="stylesheet" href="~/css/ListagemDeProdutos.css" asp-append-version="true" />
+
+
+<main>
+    <div class="InputPesquisaGroup">
+        <input type="text" class="BarraDePesquisa" placeholder="Procure um produto">
+        <i class='bx bx-search-alt'></i>
+    </div>
+    <div class="ordenador">
+        <li><a class="listCategoriaP" id="listCategoriaP">Preço</a>
+            <div class="subCategorias">
+                <a id="subEscolhap0" onclick="listarComFiltroPreco('subEscolhap0')">Mais Barato</a>
+                <a id="subEscolhap1" onclick="listarComFiltroPreco('subEscolhap1')">Mais Caro</a>
+            </div>
+        </li>
+        <li><a class="listCategoriaC" id="listCategoriaC">Categoria<i class='bx bx-chevron-down'></i></a>
+            <div class="subCategorias">
+                <a id="subEscolha0" onclick="listarComFiltro('subEscolha0',`Sorvete`)">Sorvete</a>
+                <a id="subEscolha1" onclick="listarComFiltro('subEscolha1',`Almoço`)">Almoço</a>
+                <a id="subEscolha2" onclick="listarComFiltro('subEscolha2',`Lanche`)">Lanche</a>
+                <a id="subEscolha3" onclick="listarComFiltro('subEscolha3',`Sobremesa`)">Sobremesa</a>
+                <a id="subEscolha4" onclick="listarComFiltro('subEscolha4',`Açai`)">Açai</a>
+                <a id="subEscolha5" onclick="listarComFiltro('subEscolha5',`todos`)">Todos</a>
+            </div>
+        </li>
+        <li><a onclick="ListarOrdemAlfabetica()" id="botaoAZ">A-Z</a></li>
+    </div>
+    <div class="ListaDeProdutos">
+        <span class="loader"></span>
+
+
+
+    </div>
+</main>

@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Cadastro De Produtos";
+}
+<link rel="stylesheet" href="~/css/CadastroDeProdutos.css" asp-append-version="true" />
+<main>
+    <div class="BackMenu">
+        <input type="file" id="ImagemInput" accept="image/*" style="display: none;">
+        <label for="ImagemInput" class="ImagemInput">
+            <i class='bx bx-image-add'></i>
+            <img src="" class="ImagemPreview">
+        </label>
+
+        <input type="text" class="NomeDoProdutoInput" placeholder="Nome">
+
+        <select class="CategoriaDoProdutoInput" name="itens">
+            <option value="" disabled selected>Categoria</option>
+            <option value="Almoço">Almoço</option>
+            <option value="Lanche">Lanche</option>
+            <option value="Sobremesa">Sobremesa</option>
+            <option value="Sorvete">Sorvete</option>
+            <option value="Açai">Açai</option>
+        </select>
+        <input type="text" class="DescricaoProdutoInput" placeholder="Descrição">
+        <input type="text" class="PrecoProdutoInput" placeholder="Preço Produto">
+
+        <a class="salvarProduto">SALVAR PRODUTO</a>
+    </div>
+</main>

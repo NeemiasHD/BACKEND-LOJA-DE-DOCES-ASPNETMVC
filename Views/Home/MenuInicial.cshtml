@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Menu Inicial";
+}
+<link rel="stylesheet" href="~/css/MenuInicial.css" asp-append-version="true" />
+<main>
+    <div class="BackMenu">
+        <h1>MENU</h1>
+        <a asp-action="CadastroDeProduto" asp-controller="Home" class="a">Cadastrar Produto</a>
+        <a asp-action="EdicaoDeProdutos" asp-controller="Home">Editar Produtos</a>
+        <a asp-action="ListagemDeProdutos" asp-controller="Home">Listar Produtos</a>
+    </div>
+
+</main>
